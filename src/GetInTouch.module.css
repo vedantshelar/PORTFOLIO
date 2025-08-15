@@ -1,0 +1,127 @@
+html{
+    font-size: 16px;
+}
+
+#getInTouchSection{
+background-color: white;
+width: 100vw;
+padding: 50px 0px;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+#getInTouchSection > h1{
+    color:black;
+    font-size: 3rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 600;
+    text-align: center;
+}
+
+#getInTouchContainer{
+    width: 90%;
+    margin: 20px auto;
+    padding: 25px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    column-gap: 100px;
+}
+
+#getInTouchImg{
+    width: 400px;
+}
+
+#getInTouchLeftContainer{
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5rem;
+}
+
+#para1{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: rgba(0, 0, 0, 0.814);
+}
+
+#email{
+    font-weight: 550;
+}
+
+#phone{
+    font-weight: 550;
+    margin-bottom: 20px;
+}
+
+#mediaLinks{
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+}
+
+#mediaLinks > a{
+    text-decoration: none;
+    color: black;
+}
+
+#mediaLinks > a > i{
+    color: black;
+    font-size: 1.9rem;
+}
+
+@media (max-width: 730px) {
+
+
+    #getInTouchSection > h1{
+        font-size: 2.5rem;
+    }
+    
+    #getInTouchContainer{
+        width: 100%;
+        margin: 20px auto;
+        padding: 25px 0px;
+    }
+    
+    #getInTouchImg{
+        width: 400px;
+        display: none;
+    }
+    
+    #getInTouchLeftContainer{
+        display: flex;
+        flex-direction: column;
+        font-size: 1.2rem;
+    }
+    
+    #para1{
+        margin-top: 20px;
+        margin-bottom: 20px;
+        color: rgba(0, 0, 0, 0.814);
+    }
+    
+    #email{
+        font-weight: 550;
+    }
+    
+    #phone{
+        font-weight: 550;
+        margin-bottom: 20px;
+    }
+    
+    #mediaLinks{
+        display: flex;
+        flex-direction: row;
+        column-gap: 10px;
+    }
+    
+    #mediaLinks > a{
+        text-decoration: none;
+        color: black;
+    }
+    
+    #mediaLinks > a > i{
+        color: black;
+        font-size: 1.5rem;
+    }
+
+}

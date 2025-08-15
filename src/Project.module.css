@@ -1,0 +1,288 @@
+html{
+    font-size: 16px;
+}
+
+.projectSection{
+    background-color: rgb(0, 0, 0);
+    width: 100vw;
+    border-top-left-radius: 150px;
+    border-top-right-radius: 150px;
+    padding: 50px 0px;
+}
+
+.projectSection > h1{
+    color: white;
+    font-size: 3rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 600;
+    text-align: center;
+    text-shadow: 0px 0px 20px rgba(255, 255, 255, 0.64);
+}
+
+#projectsContainer{
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    padding: 25px 30px;
+    margin-top: 10px;
+    column-gap: 40px;
+    row-gap: 25px;
+    flex-wrap: wrap;
+    margin: 20px auto;
+    justify-content: flex-start;
+    padding-left: 50px;
+}
+
+.projectBox{
+    background-color: white;
+    color: rgb(0, 0, 0);
+    width: 21%;
+    height: 400px;
+    border-radius: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.64);
+}
+
+.projectImg{
+    width: 100%;
+    height: 60%;
+    object-fit: fill;
+    object-position: center center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    margin-bottom: 8px;
+
+}
+
+.projectName{
+padding-left: 3px;
+font-size: 1.2rem;
+font-weight: 550;
+margin-bottom: 9px;
+}
+
+.prjectInfo{
+    padding-left: 4px;
+    padding-right: 5px;
+    font-size: 1.1rem;
+    color: #6F6F6F;
+    min-height: 19%;
+}
+
+.projectBox > div{
+    padding-left: 3px;
+}
+
+.projectBox > div > button{
+    background-color: black;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 20px;
+}
+
+.projectBox > div > button > a{
+    color: white;
+    text-decoration: none;
+    font-size: 0.7rem;
+}
+
+.projectBox > div > button:nth-child(2){
+    margin-left: 5px;
+}
+
+
+@media (max-width: 1427px) {
+    #projectsContainer{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        padding: 25px 5px;
+        margin-top: 10px;
+        column-gap: 40px;
+        row-gap: 25px;
+        flex-wrap: wrap;
+        margin: 20px auto;
+        justify-content: center;
+        padding-left: 0px;
+    }
+
+    .projectBox{
+        background-color: white;
+        color: rgb(0, 0, 0);
+        width: 30%;
+        height: 400px;
+        border-radius: 10px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    
+}
+
+@media (max-width: 730px) {
+
+
+    .projectSection{
+        background-color: rgb(0, 0, 0);
+        width: 100vw;
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+        padding: 50px 0px;
+    }
+    
+    .projectSection > h1{
+        font-size: 2.5rem;
+        text-align: center;
+    }
+    
+    #projectsContainer{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        padding: 25px 5px;
+        margin-top: 10px;
+        column-gap: 40px;
+        row-gap: 25px;
+        flex-wrap: wrap;
+        margin: 20px auto;
+        justify-content: center;
+        padding-left: 0px;
+    }
+    
+    .projectBox{
+        background-color: white;
+        color: rgb(0, 0, 0);
+        width: 45%;
+        height: 400px;
+        border-radius: 10px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    
+    .projectImg{
+        width: 100%;
+        height: 60%;
+        margin-bottom: 10px;
+    }
+    
+    .projectName{
+    padding-left: 3px;
+    font-size: 1.2rem;
+    font-weight: 550;
+    margin-bottom: 9px;
+    }
+    
+    .prjectInfo{
+        padding-left: 4px;
+        padding-right: 5px;
+        font-size: 1rem;
+        color: #6F6F6F;
+        min-height: 18%;
+    }
+    
+    .projectBox > div{
+        padding-left: 3px;
+    }
+    
+    .projectBox > div > button{
+        background-color: black;
+        border: none;
+        padding: 5px 10px;
+        border-radius: 20px;
+    }
+    
+    .projectBox > div > button > a{
+        color: white;
+        text-decoration: none;
+        font-size: 0.6rem;
+        text-align: center;
+    }
+    
+    .projectBox > div > button:nth-child(2){
+        margin-left: 5px;
+    }
+    
+
+}
+
+@media (max-width: 600px) {
+
+
+    .projectSection{
+        background-color: rgb(0, 0, 0);
+        width: 100vw;
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+        padding: 50px 0px;
+    }
+    
+    .projectSection > h1{
+        font-size: 2.5rem;
+        text-align: center;
+    }
+    
+    #projectsContainer{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        padding: 25px 5px;
+        margin-top: 10px;
+        column-gap: 40px;
+        row-gap: 25px;
+        flex-wrap: wrap;
+        margin: 20px auto;
+        justify-content: center;
+        padding-left: 0px;
+    }
+    
+    .projectBox{
+        background-color: white;
+        color: rgb(0, 0, 0);
+        width: 95%;
+        height: 400px;
+        border-radius: 10px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    
+    .projectImg{
+        width: 100%;
+        height: 60%;
+        margin-bottom: 10px;
+    }
+    
+    .projectName{
+    padding-left: 3px;
+    font-size: 1.2rem;
+    font-weight: 550;
+    margin-bottom: 9px;
+    }
+    
+    .prjectInfo{
+        padding-left: 4px;
+        padding-right: 5px;
+        font-size: 1rem;
+        color: #6F6F6F;
+        min-height: 18%;
+    }
+    
+    .projectBox > div{
+        padding-left: 3px;
+    }
+    
+    .projectBox > div > button{
+        background-color: black;
+        border: none;
+        padding: 5px 10px;
+        border-radius: 20px;
+    }
+    
+    .projectBox > div > button > a{
+        color: white;
+        text-decoration: none;
+        font-size: 0.6rem;
+        text-align: center;
+    }
+    
+    .projectBox > div > button:nth-child(2){
+        margin-left: 5px;
+    }
+    
+
+}

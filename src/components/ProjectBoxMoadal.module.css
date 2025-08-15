@@ -1,0 +1,99 @@
+#projectBoxMoadalMainContainer{
+    background-color: rgba(2, 2, 2, 0.892);
+    width: 100vw;
+    height: 100%;
+    position: absolute;
+    z-index: 200;
+    display: none;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+.projectBox{
+border: 1px solid black;
+width: 50%;
+height: 90vh;
+border-radius: 20px;
+background-color: white;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+overflow-y: auto;
+position: relative;
+z-index: 200;
+transform: translateY(-50%);
+}
+
+.projectImg{
+    height: 60%;
+    width: 100%;
+    object-fit: cover;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    margin-bottom: 10px;
+}
+
+.projectName{
+    font-size: 1.5rem;
+    font-weight: 550;
+    padding-left: 5px;
+    margin-bottom: 10px;
+}
+
+.prjectInfo{
+    padding-left: 5px;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.projectBox > div{
+    padding-left: 3px;
+    margin-bottom: 20px;
+}
+
+.projectBox > div > button{
+    background-color: black;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 20px;
+}
+
+.projectBox > div > button > a{
+    color: white;
+    text-decoration: none;
+    font-size: 0.7rem;
+}
+
+.projectBox > div > button:nth-child(2){
+    margin-left: 5px;
+}
+
+#closeBtn{
+    position: absolute;
+    font-size: 1.5rem;
+    top: 5px;
+    right: 5px;
+    z-index: 200; 
+    cursor: pointer;
+}
+
+@media (max-width: 730px) {
+
+    .projectBox{
+        border: 1px solid black;
+        width: 95%;
+        height: 70vh;
+        }
+
+        .projectName{
+            font-size: 1.2rem;
+            font-weight: 550;
+            padding-left: 5px;
+            margin-bottom: 10px;
+        }
+        
+        .prjectInfo{
+            padding-left: 5px;
+            font-size: 1rem;
+            margin-bottom: 10px;
+        }
+}
