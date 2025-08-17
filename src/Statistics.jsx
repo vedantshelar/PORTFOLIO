@@ -1,5 +1,4 @@
 import styles from "./Statistics.module.css"
-import ScrollStack, { ScrollStackItem } from './ScrollStack'
 import { Element } from 'react-scroll';
 import 'aos/dist/aos.css';
 
