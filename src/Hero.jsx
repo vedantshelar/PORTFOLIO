@@ -20,7 +20,7 @@ function Hero() {
             <p>Full Stack Web Developer</p>
             <p id={styles.para2}>Passionate about coding</p>
             <div>
-                <button><a href="https://res.cloudinary.com/dmxgbgmsr/image/upload/v1755278620/Blue_and_Gray_Simple_Professional_CV_Resume_mx0rqd.jpg" target="_blank">View Resume</a></button>
+                <button><a href="https://res.cloudinary.com/dmxgbgmsr/image/upload/v1755407360/Blue_and_Gray_Simple_Professional_CV_Resume_mx0rqd.jpg" target="_blank">View Resume</a></button>
                 <button><a href="https://github.com/vedantshelar" target="_blank">Git hub</a></button>
             </div>
         </Element>
