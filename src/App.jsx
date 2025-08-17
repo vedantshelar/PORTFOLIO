@@ -13,50 +13,54 @@ import { useRef, useState } from 'react';
 import ProjectBoxMoadal from './components/ProjectBoxModal';
 
 function App() {
-  let [isNavOpen,setIsNavOpen] = useState(false);
+  let [isNavOpen, setIsNavOpen] = useState(false);
   let projectBoxModal = useRef(null);
 
-  function showProjectBoxMadal(e,projectData){
-    projectBoxModal.current.style.display="flex";
+  function showProjectBoxMadal(e, projectData) {
+    let isProjectNotLive = projectData.liveDemoLink.endsWith("#");
+    projectBoxModal.current.style.display = "flex";
     let projectBox = projectBoxModal.current.firstElementChild;
-    projectBox.style.top=e.pageY+"px";
-    projectBox.querySelector("#projectName").innerText=projectData.projectName;
-    projectBox.querySelector("#projectInfo").innerText=projectData.projectInfo;
-    projectBox.querySelector("#githubLink").href=projectData.githubLink;
-    projectBox.querySelector("#liveDemoLink").href=projectData.liveDemoLink;
-    projectBox.querySelector("#projectImg").src=projectData.projectImg;
+    projectBox.style.top = e.pageY + "px";
+    projectBox.querySelector("#projectName").innerText = projectData.projectName;
+    projectBox.querySelector("#projectInfo").innerText = projectData.projectInfo;
+    projectBox.querySelector("#githubLink").href = projectData.githubLink;
+    projectBox.querySelector("#liveDemoLink").href = projectData.liveDemoLink;
+    projectBox.querySelector("#projectImg").src = projectData.projectImg;
+    if(isProjectNotLive){
+      projectBox.querySelector("#liveDemoBtn").style.visibility="hidden";
+    }
   }
 
-  function closeProjectBoxModal(e){
-    projectBoxModal.current.style.display="none";
+  function closeProjectBoxModal(e) {
+    projectBoxModal.current.style.display = "none";
   }
 
-  function openNav(){
+  function openNav() {
     setIsNavOpen(true);
   }
 
-  function closeNav(){
+  function closeNav() {
     setIsNavOpen(false);
   }
   return (
     <div id='appMainContainer'>
       <div id='appContainer'>
-      <Aurora
-        colorStops={["#7CFF67", "#B19EEF", "#5227FF"]}
-        blend={0.5}
-        amplitude={1.0}
-        speed={1.0}
-      />
-      <Navbar isNavOpen={isNavOpen} openNav={openNav} closeNav={closeNav}/>
-      {!isNavOpen && <Hero  />}
+        <Aurora
+          colorStops={["#7CFF67", "#B19EEF", "#5227FF"]}
+          blend={0.5}
+          amplitude={1.0}
+          speed={1.0}
+        />
+        <Navbar isNavOpen={isNavOpen} openNav={openNav} closeNav={closeNav} />
+        {!isNavOpen && <Hero />}
       </div>
-      <About/>
-      <Project showProjectBoxMadal={showProjectBoxMadal}/>
+      <About />
+      <Project showProjectBoxMadal={showProjectBoxMadal} />
       <TechStack />
       <Achievement />
       <Statistics />
       <GetInTouch />
-      <Greet /> 
+      <Greet />
       <ProjectBoxMoadal myReference={projectBoxModal} closeProjectBoxModal={closeProjectBoxModal} />
     </div>
   )
