@@ -5,10 +5,10 @@ import 'aos/dist/aos.css';
 
 function Statistics() {
     return (
-        <Element name="statistics" id={styles.statisticsSetion}>
+        <Element name="statistics" id={styles.statisticsSetion} data-aos="fade-up">
             <h1>Statistics</h1>
             <div id={styles.statisticsContainer}>
-                    <div className={styles.statisticsOuterBox}>
+                    <div className={styles.statisticsOuterBox} data-aos="fade-right">
                         <div className="statisticsBox">
                             <i class="fa-solid fa-code"></i>
                             <p className="statisticsBoxHead">Projects</p>
@@ -16,7 +16,7 @@ function Statistics() {
                         </div>
                         <p className="statisticsBoxNumber">7+</p>
                     </div>
-                    <div className={styles.statisticsOuterBox}>
+                    <div className={styles.statisticsOuterBox} data-aos="fade-left">
                         <div className="statisticsBox">
                             <i class="fa-solid fa-trophy"></i>
                             <p className="statisticsBoxHead">Tech Stack</p>
@@ -24,7 +24,7 @@ function Statistics() {
                         </div>
                         <p className="statisticsBoxNumber">11+</p>
                     </div>
-                    <div className={styles.statisticsOuterBox}>
+                    <div className={styles.statisticsOuterBox} data-aos="fade-right">
                         <div className="statisticsBox">
                             <i class="fa-solid fa-award"></i>
                             <p className="statisticsBoxHead">Achievements</p>
